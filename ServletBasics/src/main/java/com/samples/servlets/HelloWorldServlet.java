@@ -9,9 +9,9 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
 public class HelloWorldServlet extends GenericServlet{
-
 	@Override
 	public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
+		System.out.println("Inside the service method in HelloWorldServlet...!");
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
 		out.println("<html>");
